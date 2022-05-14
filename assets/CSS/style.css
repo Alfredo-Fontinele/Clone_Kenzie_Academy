@@ -122,11 +122,6 @@ main {
     margin-top: 100px;
 }
 
-.div_escurecer {
-    z-index: 999;
-    background-color: rgba(20,30,40,0.8);
-}
-
 section {
     height: 600px;
     padding: 0px 90px;
@@ -145,7 +140,7 @@ section {
 }
 
 .section_initial .section_text {
-    height: 400px;
+    height: 300px;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -175,14 +170,13 @@ section {
     text-decoration: none;
     font-size: 21px;
     font-weight: 700;
-    border: 3px solid #fff;
+    background-color: blue;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
 .section_initial .section_text a:hover {
-    background-color: blue;
-    border: none;
+    transform: scale(1.02);
 }
 
 .section_initial .section_text svg {
