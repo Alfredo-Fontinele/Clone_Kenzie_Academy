@@ -118,16 +118,25 @@ header {
     width: 140px;
 }
 
-section {
+main {
     margin-top: 100px;
-    background-image: url("https://kenzie.com.br/images/hero-curriculo-dkt.png");
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+.div_escurecer {
+    z-index: 999;
+    background-color: rgba(20,30,40,0.8);
+}
+
+section {
     height: 600px;
+    padding: 0px 90px;
 }
 
 .section_initial {
+    background-image: url("https://kenzie.com.br/images/hero-curriculo-dkt.png");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;    
     padding-top: 100px;
     display: flex;
     width: auto;
@@ -142,7 +151,6 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 100px;
     color: #FFF;
 }
 
@@ -179,6 +187,18 @@ section {
 
 .section_initial .section_text svg {
     margin-left: 20px;
+}
+
+.section_observation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.section_observation p {
+    line-height: 1.4;
+    font-size: 22px;
 }
 
 @media only screen and (max-width: 1110px) {
@@ -232,9 +252,19 @@ section {
         font-size: 15px;
     }
 
+    .section_observation p {
+        line-height: 1.4;
+        font-size: 13px;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
+
+    section {
+        height: 600px;
+        padding: 0px 60px;
+    }
 
     .section_initial .section_text {
         height: 350px;
@@ -248,7 +278,7 @@ section {
     }
     
     .section_initial .section_text h1 {
-        width: 150px;
+        width: 200px;
         text-align: center;
         font-size: 20px;
         margin-top: 35px;
@@ -264,7 +294,6 @@ section {
     .section_initial .section_text a {
         width: 180px;
         text-align: center;
-        font-size: 15px;
     }
 
     .section_initial .section_text svg {
