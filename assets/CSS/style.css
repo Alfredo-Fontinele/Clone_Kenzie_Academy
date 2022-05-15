@@ -252,6 +252,23 @@ section {
     height: 20px;
 }
 
+
+/* .modulo {
+    display: flex;
+    background-color: rgb(44, 42, 42);
+    width: calc(100vw - 14.5vw);
+    height: 500px;
+    margin-bottom: 50px;
+} */
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1110px) {
 
     .header {
