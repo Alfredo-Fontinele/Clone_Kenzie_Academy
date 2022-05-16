@@ -117,7 +117,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 3px;
 }
 
-
 .header .header--left img {
     height: 35px;
     width: 140px;
@@ -229,6 +228,7 @@ section {
 .section_modulos .modulos_kenzie {
     width: 160px;
     height: 60px;
+    margin: auto;
     margin-right: 40px;
     margin-bottom: 40px;
     display: flex;
@@ -251,11 +251,6 @@ section {
 .section_modulos .modulos_kenzie h1 {
     font-size: 16px;
     margin-right: 10px;
-}
-
-.section_modulos .modulos_kenzie svg {
-    width: 20px;
-    height: 20px;
 }
 
 .modulo {
@@ -311,29 +306,34 @@ section {
         display: none;
     }
 
+    .section_title h1 {
+        text-align: center;
+    }
+
     .section_modulos {
         display: flex;
         justify-content: center;
         align-items: center;
         width: auto;
-        flex-direction: column;    
+        margin: auto;
+        flex-direction: column;
     }
 
     .section_modulos .modulos_kenzie {
-        width: calc(100vw - 50vw);
+        display: flex;   
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 30px;
         height: 61px;
     }
 
-    .section_title h1 {
-        text-align: center;
-    }
-
-    .section_modulos .modulo {
+    .modulo {
         width: auto;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         padding: 20px;
-        width: calc(100vw - 30vw);
+        width: calc(100vw - 40vw);
     }
 
     .modulo h1 {
@@ -393,7 +393,7 @@ section {
 @media only screen and (max-width: 500px) {
 
     section {
-        padding: 0px 60px;
+        padding: 0px 30px;
     }
 
     .section_initial .section_text {
@@ -436,6 +436,10 @@ section {
 
     .section_title h1 {
         font-size: 30px;   
+    }
+
+    .modulo {
+        height: 650px;
     }
 
 }
