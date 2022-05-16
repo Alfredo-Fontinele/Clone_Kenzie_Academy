@@ -218,7 +218,11 @@ section {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-bottom: 200px;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-top: 50px;
+    /* padding-bottom: 200px; */
 }
 
 .section_modulos .modulos_kenzie {
@@ -253,19 +257,48 @@ section {
     height: 20px;
 }
 
-
-/* .modulo {
+.modulo {
     display: flex;
-    background-color: rgb(44, 42, 42);
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: blue;
     width: calc(100vw - 14.5vw);
-    height: 500px;
+    height: 680px;
     margin-bottom: 50px;
-} */
+    padding-top: 30px;
+    padding-left: 30px;
+    border-radius: 20px;
+    color: white;
+}
+
+.modulo h1 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.modulo h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.modulo ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.modulo li {
+    font-size: 17px;
+    margin-bottom: 7px;
+}
 
 @media only screen and (max-width: 1110px) {
 
     .header {
-        padding: 0px 30px;
+        padding: 0px 20px;
     }
     
     .menu_mobile {
@@ -278,6 +311,10 @@ section {
     }
 
     .section_modulos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
         flex-direction: column;    
     }
 
@@ -290,6 +327,25 @@ section {
         text-align: center;
     }
 
+    .section_modulos .modulo {
+        width: auto;
+        display: flex;
+        align-items: flex-start;
+        padding: 20px;
+        width: calc(100vw - 30vw);
+    }
+
+    .modulo h1 {
+        margin-top: 0px;
+    }
+
+    .modulo h2 {
+        font-size: 17px;
+    }
+
+    .modulo li {
+        font-size: 13px;
+    }
 }
 
 @media only screen and (max-width: 600px) { 
