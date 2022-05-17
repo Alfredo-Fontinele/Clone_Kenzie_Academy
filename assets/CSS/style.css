@@ -484,6 +484,7 @@ footer {
 
     .modulo {
         height: 600px;
+        width: 300px;
     }
 
 }
@@ -492,6 +493,7 @@ footer {
 
     .modulo {
         height: 550px;
+        width: 250px;
     }
 
     .modulo li {
