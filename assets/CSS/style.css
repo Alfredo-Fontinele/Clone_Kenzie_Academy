@@ -314,6 +314,7 @@ footer {
 .footer--right #trabalhe_conosco {
     font-weight: bold;
     font-size: 13px;
+    cursor: pointer;
 }
 
 .footer--left {
@@ -349,6 +350,10 @@ footer {
 .footer--right a {
     text-decoration: none;
     color: white;
+}
+
+.footer--right a {
+    cursor: auto;
 }
 
 .footer_bottom {
