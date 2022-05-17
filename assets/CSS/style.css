@@ -432,6 +432,12 @@ footer {
         font-size: 15px;
     }
 
+    .modulo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
