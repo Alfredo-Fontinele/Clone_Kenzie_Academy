@@ -223,21 +223,24 @@ section {
 
 .section_modulos .modulos_kenzie {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 10px 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
     border-radius: 5px;
     text-transform: uppercase;
     box-shadow: 2px 2px 3px 2px rgb(0 0 0 / 30%);
-    transition: all .3s ease-in-out;
     background-color: blue;
     color: white;
 }
 
 .section_modulos .modulos_kenzie h1 {
-    font-size: 16px;
-    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    font-size: 19px;
 }
 
 .modulo {
@@ -578,8 +581,8 @@ footer {
 
 @media only screen and (max-width: 370px) {
 
-    .section_modulos .modulos_kenzie {
-        padding: 20px 40px;
+    .section_modulos .modulos_kenzie h1 {
+        font-size: 14px;
     }
 
     .modulo {
