@@ -222,14 +222,10 @@ section {
 }
 
 .section_modulos .modulos_kenzie {
-    /* width: 350px;
-    height: 60px; */
-    padding: 30px 40px;
-    margin-right: 40px;
-    margin-bottom: 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 40px;
     border-radius: 5px;
     text-transform: uppercase;
     box-shadow: 2px 2px 3px 2px rgb(0 0 0 / 30%);
@@ -405,14 +401,12 @@ footer {
         display: flex;   
         justify-content: center;
         align-items: center;
-        margin: auto;
         margin-bottom: 30px;
         height: 61px;
     }
 
     .modulo {
         display: flex;
-        align-items: center;
         padding: 20px;
         width: calc(100vw - 40vw);
     }
@@ -582,7 +576,11 @@ footer {
 
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 370px) {
+
+    .section_modulos .modulos_kenzie {
+        padding: 20px 40px;
+    }
 
     .modulo {
         height: 550px;
