@@ -191,7 +191,6 @@ section {
 
 .section_observation {
     display: flex;
-    margin: auto;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
