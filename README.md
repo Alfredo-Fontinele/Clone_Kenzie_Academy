@@ -1,4 +1,4 @@
-# Clone_Kenzy_Academy (Em andamento)
+# Clone_Kenzie_Academy (Em andamento)
 
 ## ***1º) Modo Desktop***
 
