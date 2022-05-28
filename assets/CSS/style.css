@@ -226,9 +226,8 @@ section {
     align-items: flex-start;
     padding-top: 50px;
     padding-bottom: 100px;
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 30px;
+    background: #243B55;
 }
 
 .section_modulos .modulos_kenzie {
@@ -394,11 +393,12 @@ footer {
 
     .header .header--right .navbar {
         width: 100%;
-        height: calc(100vh - 80px);
+        display: flex;
+        height: calc(100vh - 100px);
         background-color: rgba(20,30,40, 0.9);
         position: absolute;
         top: 100px;
-        left: -100%;
+        left: -150%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -588,6 +588,10 @@ footer {
 
     .header .header--right a {
         font-size: 17px;
+    }
+    
+    .menu_mobile div {
+        width: 40px;
     }
 
     .section_modulos .modulos_kenzie h1 {
