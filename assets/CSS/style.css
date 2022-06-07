@@ -42,10 +42,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .header .header--right ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header .header--right li {
     list-style-type: none;
+    text-align: center;
+    padding: 10px;
 }
 
 .header .header--right a {
@@ -53,12 +57,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     text-decoration: none;
     color: rgb(44, 42, 42);
-    margin-right: 27px;
 }
 
-.header .header--right a:hover {
+.header .header--right a:after{
+    display:block;
+    content: '';
     border-bottom: 2px solid slateblue;
-    padding-bottom: 10px;
+    transform: scaleX(0);
+    transition: all 400ms ease-in-out;
+}
+
+.header .header--right a:hover:after {
+    transform: scaleX(1);
 }
 
 .quero_ser_programador {
