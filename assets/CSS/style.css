@@ -17,6 +17,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: JetBrains Mono, monospace;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
 .header {
     height: 100px;
     display: flex;
@@ -126,7 +131,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main {
-    margin-top: 100px;
+    margin: 100px auto 0 auto;
+    max-width: 1800px;
 }
 
 section {
@@ -144,7 +150,7 @@ section {
     width: auto;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 70px;
+    margin: 0 auto 70px auto;
 }
 
 .section_initial .section_text {
@@ -307,7 +313,7 @@ footer {
     width: 100%;
     background-color: #001e32;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 70px 100px;
 }
@@ -416,7 +422,7 @@ footer {
     }
 
     .header .header--right li {
-        margin: 20px 0;
+        margin: 5px 0;
     }
 
     .header .header--right .navbar.active {
@@ -587,16 +593,8 @@ footer {
 
 @media only screen and (max-width: 370px) {
 
-    .header .header--right .navbar {
-        height: 100vh;
-    }
-
     .header .header--right a {
         font-size: 17px;
-    }
-    
-    .menu_mobile div {
-        width: 40px;
     }
 
     .section_modulos .modulos_kenzie h1 {
